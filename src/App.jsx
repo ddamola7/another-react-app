@@ -1,26 +1,18 @@
 import React from 'react'
 import Navbar from './component/Navbar'
+import Footer from './component/Footer'
 import { Outlet } from 'react-router-dom'
+
 
 const App = () => {
   return (
     <>
-    <div>
-      <Navbar/>
-
-
-      <div className=' mx-auto '>
-
+    <Navbar/>
+    <div className='min-h-screen'>
       <Outlet/>
-      </div>
-
-
-
-
-
-
     </div>
-    
+    <Footer/>
+   
     
     
     
