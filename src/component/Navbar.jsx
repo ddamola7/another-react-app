@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRegBell } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { CiSearch } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,9 +11,12 @@ const Navbar = () => {
   return (
    <nav className='h-[50px] shadow flex justify-between items-center px-10'>
         <div className='flex items-center'>
-            <div>
+            
+                <Link to="/">
                 <img src="./careus logo.png" alt="" />
-            </div>
+                </Link>
+                
+            
 
             <div className=' flex items-center bg-gray-100 rounded p-1 mx-4'>
                  <CiSearch />
